@@ -180,7 +180,7 @@ public class LoginForm extends javax.swing.JFrame {
         String password=jPasswordFieldpassword.getText();
        // int id=Integer.parseInt(ID);
 
-        String q="SELECT * FROM students WHERE `stuid` = ? AND `password` = ?";
+        String q="SELECT * FROM studentsDB WHERE `stuid` = ? AND `password` = ?";
        
         try {
             st=MyConnection.getcon().prepareStatement(q);
